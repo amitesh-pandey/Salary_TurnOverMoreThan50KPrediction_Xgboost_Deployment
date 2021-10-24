@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TurnOver Calculation</title>
+    <style>
+    body{
+            background-image: url("{{url_for('static', filename='image1.jpg')}}");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+    }
+</style>
+</head>
+<body background="image.jpg">
+    <div style="text-align:center;">
+        <h1 style ="color:black;font-size=40;"> Predicting the TurnOver More than 50k </h1>
+    <form action = "/submit", method="POST">
+        <input type="number" name="age" placeholder="age " size="50" required><br><br>
+        <input type="number" name="workclass" placeholder="workclass" size="50"  required><br><br>
+        <input type="number" name="fnlwgt" placeholder="fnlwgt"  size="50"required><br><br>
+        <input type="number" name="education" placeholder="education"  size="50"required><br><br>
+        <input type="number" name="education_num" placeholder="education_num" size="50" required><br><br>
+        <input type="number" name="marital_status" placeholder="marital_status"  size="50" required><br><br>
+        <input type="number" name="occupation" placeholder="occupation"  size="50" required><br><br>
+        <input type="number" name="relationship" placeholder="relationship"  size="50" required><br><br>
+        <input type="number" name="race" placeholder="race"  size="50" required><br><br>
+        <input type="number" name="sex" placeholder="sex"  size="50" required><br><br>
+        <input type="number" name="capital_gain" placeholder="capital_gain"  size="50" required><br><br>
+        <input type="number" name="capital_loss" placeholder="capital_loss"  size="50" required><br><br>
+        <input type="number" name="hours_per_week" placeholder="hours_per_week"  size="50" required><br><br>
+        <input type = "submit" value = "submit">
+    </form>
+    </div>
+</body>
+</html>
